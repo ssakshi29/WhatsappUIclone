@@ -1,0 +1,160 @@
+html,body{
+    height:100%;
+    width:100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow:hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    display:flex;
+}
+
+
+#leftcontainer{
+   
+    min-width: 300px;
+    overflow:auto;
+    height:100vh;
+
+}
+
+#rightcontainer{
+    flex:1;
+
+    display:flex;
+    flex-direction: column;
+
+}
+
+#leftheader{
+    padding:5px 10px 5px 10px;
+    background-color: rgb(233, 225, 225);
+
+}
+
+#profile{
+    border-radius:20px;
+}
+
+#rightheader{
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgb(236,236,236);
+    
+    display:flex;
+    align-items:center;
+}
+
+
+#personName{
+    padding-left:10px;
+    flex:1;
+}
+
+#profile{
+    border-radius:20px;
+}
+
+.personChat
+{
+    display:flex;
+    align-items:center;
+    padding:5px;
+     border-bottom: 0.5px solid rgb(221,221,221);
+}
+
+.chatName{
+    flex:1;
+    padding-left:5px;
+    padding-right:5px;
+    font-size:15px;
+}
+.chatTime{
+    color:rgb(156,156,156);
+    font-size:12px;
+}
+
+.chatMessage{
+    color:rgb(156,156,156);
+    font-weight: normal;
+    font-size:12px;
+}
+
+.selectedChat{
+    background-color: rgb(209,209,209);
+}
+
+
+#peopleContainer{
+    overflow-y:auto;
+}
+
+
+
+#main {
+background-image: url(https://i.redd.it/qwd83nc4xxf41.jpg);
+    height: calc(100% - 100px);
+    /* background-size:cover; */
+}
+
+
+#inputmsg{
+    display:flex;
+    background-color:rgb(236,236,236,236);
+     padding:3px;
+     align-items: center;
+}
+
+
+#msgContainer{
+    flex:1;
+}
+
+#msg{
+    height:32px;
+    width: 100%;
+    
+    border-radius:5px;
+    border:0px solid black;
+}
+
+.icon{
+    padding:4px;
+}
+
+.msgBox{
+    padding:3px;
+}
+
+
+.receivedMsg{
+    display:inline-block;
+    background-color: white;
+    padding:10px;
+    border-radius:5px;
+    max-width:190px;
+}
+
+
+
+.sendMsg{
+    display:inline-block;
+    background-color: rgb(213, 241, 170);
+    padding:10px;
+    border-radius:5px;
+    max-width:190px;
+
+    text-align: left;
+}
+
+
+.msgBox2{
+    text-align:right;
+
+}
